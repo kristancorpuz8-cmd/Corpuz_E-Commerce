@@ -139,7 +139,7 @@ body {
     background-color: var(--active-bg);
     color: white;
     font-weight: bold;
-    border-left: 5px solid var(--accent-color); /* Updated to use accent color instead of plain white for a premium look */
+    border-left: 5px solid var(--accent-color); 
 }
 
 .sidebar a.active i {
