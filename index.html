@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <form id="loginForm">
+
+            <h1>User Login</h1>
+            <p class="sub">Please login to continue.</p>
+
+            <div id="generalMessage" class="alert-box"></div>
+
+            <div class="field" id="usernameGroup">
+                <label for="username">Username / Email</label>
+                <input type="text" id="username" placeholder="kristancorpuz@email.com">
+                <span class="err-msg" id="usernameError"></span>
+            </div>
+
+            <div class="field" id="passwordGroup">
+                <label for="password">Password</label>
+                <div class="pw-wrap">
+                    <input type="password" id="password" placeholder="at least 6 characters">
+                    <button type="button" id="togglePassword">
+                        <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </button>
+                </div>
+                <span class="err-msg" id="passwordError"></span>
+            </div>
+
+            <div class="options">
+                <label class="remember">
+                    <input type="checkbox" id="rememberMe">
+                    Remember me
+                </label>
+                <a href="#">Forgot your password?</a>
+            </div>
+
+            <button type="submit" class="btn">Sign In</button>
+
+            <p class="signup">
+                No account yet? <a href="#">Register here</a>
+            </p>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
