@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Menu Bar - Assignment 3</title>
+    <link rel="stylesheet" href="side-menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h2><i class="fa-solid fa-store"></i> Corpuz E-Commerce</h2>
+        </div>
+
+        <div class="sidebar-menu">
+            <div class="menu-group">
+                <h3 class="menu-title">Main Navigation</h3>
+                <ul class="menu-list">
+                    <li><a href="#" class="menu-link active" onclick="setActive(this)"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="#" class="menu-link" onclick="setActive(this)"><i class="fa-solid fa-box-open"></i> Products</a></li>
+                    <li><a href="#" class="menu-link" onclick="setActive(this)"><i class="fa-solid fa-tags"></i> Categories</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-group">
+                <h3 class="menu-title">Shopping</h3>
+                <ul class="menu-list">
+                    <li><a href="#" class="menu-link" onclick="setActive(this)"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+                    <li><a href="#" class="menu-link" onclick="setActive(this)"><i class="fa-solid fa-clipboard-list"></i> My Orders</a></li>
+                    <li><a href="#" class="menu-link" onclick="setActive(this)"><i class="fa-solid fa-heart"></i> Wishlist</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-group">
+                <h3 class="menu-title">Account</h3>
+                <ul class="menu-list">
+                    <li><a href="#" class="menu-link" onclick="setActive(this)"><i class="fa-solid fa-user"></i> Profile</a></li>
+                    <li><a href="#" class="menu-link" onclick="setActive(this)"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-group">
+                <h3 class="menu-title">System</h3>
+                <ul class="menu-list">
+                    <li><a href="#" class="menu-link" onclick="logoutAlert()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="top-header">
+            <button class="toggle-btn" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <h1>Dashboard</h1>
+        </header>
+        
+        <div class="content-wrapper">
+            <div class="welcome-card">
+                <h2>Welcome to Corpuz and Volante E-Commerce</h2>
+                <p>HAHAHAHAHAHHAHAHAHAH.</p>
+                <p>wbahahahahahahah dipa tapos</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="side-menu.js"></script>
+</body>
+</html>
