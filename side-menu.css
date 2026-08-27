@@ -215,3 +215,295 @@ body {
     line-height: 1.6;
     margin-bottom: 8px;
 }
+/* =============================================
+   pages.css - Shared styles for all 9 pages
+   ============================================= */
+
+.top-header h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #f1f5f9;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-header h1 i {
+    color: #3b82f6;
+}
+
+.page-intro {
+    margin-bottom: 28px;
+}
+
+.page-intro h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin-bottom: 8px;
+}
+
+.page-intro p {
+    color: #94a3b8;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.content-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 28px 24px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.content-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: #3b82f6;
+    margin-bottom: 16px;
+}
+
+.content-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #f1f5f9;
+    margin-bottom: 8px;
+}
+
+.content-card p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.price {
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+    color: #60a5fa !important;
+    margin-top: 10px !important;
+}
+
+.qty {
+    color: #64748b !important;
+    font-size: 0.85rem !important;
+    margin-top: 4px !important;
+}
+
+.btn-add {
+    margin-top: 16px;
+    width: 100%;
+    padding: 10px 16px;
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-add:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+.status {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status.delivered {
+    background: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+    border: 1px solid rgba(74, 222, 128, 0.3);
+}
+
+.status.to-ship {
+    background: rgba(251, 191, 36, 0.15);
+    color: #fbbf24;
+    border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.status.pending {
+    background: rgba(248, 113, 113, 0.15);
+    color: #f87171;
+    border: 1px solid rgba(248, 113, 113, 0.3);
+}
+
+.cart-total-box {
+    margin-top: 28px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.cart-total-box p {
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+.total-price {
+    color: #60a5fa;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.btn-checkout {
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-checkout:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.4);
+}
+
+.profile-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.profile-avatar {
+    font-size: 6rem;
+    color: #3b82f6;
+    line-height: 1;
+}
+
+.profile-details {
+    flex: 1;
+    min-width: 280px;
+}
+
+.profile-row {
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    gap: 20px;
+}
+
+.profile-row:last-child {
+    border-bottom: none;
+}
+
+.profile-label {
+    color: #64748b;
+    font-size: 0.9rem;
+    font-weight: 500;
+    min-width: 180px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-label i {
+    color: #3b82f6;
+    width: 16px;
+}
+
+.profile-value {
+    color: #f1f5f9;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.logout-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(248, 113, 113, 0.2);
+    border-radius: 24px;
+    padding: 48px 40px;
+    max-width: 520px;
+    text-align: center;
+}
+
+.logout-icon {
+    font-size: 3rem;
+    color: #f87171 !important;
+    margin-bottom: 20px;
+}
+
+.logout-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #f1f5f9;
+    margin-bottom: 12px;
+}
+
+.logout-card p {
+    color: #94a3b8;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.btn-logout {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #dc2626, #ef4444);
+    color: white;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-logout:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(220, 38, 38, 0.4);
+    color: white;
+    text-decoration: none;
+}

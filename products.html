@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Corpuz & Volante E-Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="side-menu.css">
+</head>
+<body>
+
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h2><i class="fa-solid fa-store"></i> Corpuz &amp; Volante</h2>
+        </div>
+        <div class="sidebar-menu">
+            <div class="menu-group">
+                <p class="menu-title">Main Navigation</p>
+                <ul class="menu-list">
+                    <li><a href="side-menu.html" class="menu-link"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="products.html" class="menu-link active"><i class="fa-solid fa-box-open"></i> Products</a></li>
+                    <li><a href="categories.html" class="menu-link"><i class="fa-solid fa-tags"></i> Categories</a></li>
+                </ul>
+            </div>
+            <div class="menu-group">
+                <p class="menu-title">Shopping</p>
+                <ul class="menu-list">
+                    <li><a href="cart.html" class="menu-link"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+                    <li><a href="orders.html" class="menu-link"><i class="fa-solid fa-clipboard-list"></i> My Orders</a></li>
+                    <li><a href="wishlist.html" class="menu-link"><i class="fa-solid fa-heart"></i> Wishlist</a></li>
+                </ul>
+            </div>
+            <div class="menu-group">
+                <p class="menu-title">Account</p>
+                <ul class="menu-list">
+                    <li><a href="profile.html" class="menu-link"><i class="fa-solid fa-user"></i> Profile</a></li>
+                    <li><a href="settings.html" class="menu-link"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                </ul>
+            </div>
+            <div class="menu-group">
+                <p class="menu-title">System</p>
+                <ul class="menu-list">
+                    <li><a href="logout.html" class="menu-link"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="top-header">
+            <button class="toggle-btn" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <h1><i class="fa-solid fa-box-open"></i> Products</h1>
+        </header>
+        
+        <div class="content-wrapper">
+            <div class="page-intro">
+                <h2>Available Products</h2>
+                <p>Browse our complete collection of products available in the store.</p>
+            </div>
+            <div class="card-grid">
+                <div class="content-card">
+                    <div class="card-icon"><i class="fa-solid fa-headphones"></i></div>
+                    <h3>Wireless Headphones</h3>
+                    <p class="price">₱ 2,499</p>
+                    <button class="btn-add"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h3>Smartphone Pro Max</h3>
+                    <p class="price">₱ 45,000</p>
+                    <button class="btn-add"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon"><i class="fa-solid fa-laptop"></i></div>
+                    <h3>Laptop Ultrabook</h3>
+                    <p class="price">₱ 55,000</p>
+                    <button class="btn-add"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon"><i class="fa-solid fa-keyboard"></i></div>
+                    <h3>Mechanical Keyboard</h3>
+                    <p class="price">₱ 3,200</p>
+                    <button class="btn-add"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon"><i class="fa-solid fa-computer-mouse"></i></div>
+                    <h3>Wireless Mouse</h3>
+                    <p class="price">₱ 1,500</p>
+                    <button class="btn-add"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon"><i class="fa-solid fa-camera"></i></div>
+                    <h3>Action Camera</h3>
+                    <p class="price">₱ 8,500</p>
+                    <button class="btn-add"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                </div>
+            </div>
+        
+        </div>
+    </main>
+
+    <script src="side-menu.js"></script>
+</body>
+</html>
